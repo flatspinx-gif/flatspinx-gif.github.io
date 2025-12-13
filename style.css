@@ -1,7 +1,5 @@
-/* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap');
 
-/* Global styles */
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(-45deg, #121212, #1f1f1f, #ff4c29, #e63e20);
@@ -13,14 +11,12 @@ body {
   transition: background 0.5s, color 0.5s;
 }
 
-/* Gradient animation */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Header */
 header {
   background: rgba(31, 31, 31, 0.85);
   text-align: center;
@@ -35,10 +31,6 @@ header h1 {
   color: #ff4c29;
 }
 
-nav {
-  margin-top: 10px;
-}
-
 nav a {
   margin: 0 15px;
   color: #f5f5f5;
@@ -51,7 +43,6 @@ nav a:hover {
   color: #ff4c29;
 }
 
-/* Theme toggle button */
 #theme-toggle {
   margin-top: 15px;
   background: #ff4c29;
@@ -68,7 +59,6 @@ nav a:hover {
   background: #e63e20;
 }
 
-/* Sections */
 section {
   max-width: 900px;
   margin: 40px auto;
@@ -85,7 +75,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Cards */
 .card {
   background: rgba(31, 31, 31, 0.8);
   padding: 20px;
@@ -93,7 +82,6 @@ h2 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-/* Buttons */
 .btn, button {
   background: #ff4c29;
   color: #fff;
@@ -120,7 +108,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-/* Default sizes for desktop */
 .stream-player {
   width: 800px;
   height: 450px;
@@ -137,7 +124,6 @@ h2 {
   box-shadow: 0 0 20px rgba(255,76,41,0.6);
 }
 
-/* Responsive layout for mobile */
 @media (max-width: 900px) {
   .stream-container {
     flex-direction: column;
@@ -156,7 +142,6 @@ h2 {
   }
 }
 
-/* Footer */
 footer {
   background: rgba(31, 31, 31, 0.85);
   text-align: center;
@@ -164,7 +149,6 @@ footer {
   border-top: 2px solid #ff4c29;
 }
 
-/* Light mode */
 body.light-mode {
   background: linear-gradient(-45deg, #f5f5f5, #ddd, #ff4c29, #e63e20);
   background-size: 400% 400%;
