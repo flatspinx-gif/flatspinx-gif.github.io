@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <title>Flatspinx Streaming</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Welcome to Flatspinx Live!</h1>
+    <h1>🎮 Flatspinx Live</h1>
     <nav>
       <a href="#stream">Stream</a>
       <a href="#schedule">Schedule</a>
       <a href="#community">Community</a>
       <a href="#support">Support</a>
     </nav>
-    <button id="theme-toggle">Toggle Dark/Light Mode</button>
+    <button id="theme-toggle">🌗 Toggle Theme</button>
   </header>
 
   <section id="stream">
     <h2>Live Stream</h2>
-    <!-- Replace YOURCHANNEL with your Twitch or YouTube channel name -->
     <iframe src="https://player.twitch.tv/?channel=YOURCHANNEL&parent=flatspinx-gif.github.io" 
             frameborder="0" allowfullscreen="true" scrolling="no" height="450" width="800">
     </iframe>
@@ -27,29 +28,43 @@
 
   <section id="schedule">
     <h2>Streaming Schedule</h2>
-    <ul>
-      <li>Monday: 7 PM – 10 PM</li>
-      <li>Wednesday: 7 PM – 10 PM</li>
-      <li>Friday: 8 PM – Midnight</li>
-    </ul>
+    <div class="card">
+      <ul>
+        <li>Monday: 7 PM – 10 PM</li>
+        <li>Wednesday: 7 PM – 10 PM</li>
+        <li>Friday: 8 PM – Midnight</li>
+      </ul>
+    </div>
   </section>
 
   <section id="community">
     <h2>Join the Community</h2>
     <p>
-      <a href="https://discord.gg/YOURINVITE">Discord</a> | 
-      <a href="https://twitter.com/YOURHANDLE">Twitter</a> | 
-      <a href="https://instagram.com/YOURHANDLE">Instagram</a>
+      <a href="https://discord.gg/YOURINVITE" class="btn">Discord</a>
+      <a href="https://twitter.com/YOURHANDLE" class="btn">Twitter</a>
+      <a href="https://instagram.com/YOURHANDLE" class="btn">Instagram</a>
     </p>
   </section>
 
   <section id="support">
     <h2>Support the Stream</h2>
-    <button onclick="window.open('https://paypal.me/YOURPAYPAL', '_blank')">Donate</button>
-    <button onclick="window.open('https://YOURMERCHSTORE.com', '_blank')">Shop Merch</button>
+    <button onclick="window.open('https://paypal.me/YOURPAYPAL', '_blank')" class="btn">💸 Donate</button>
+    <button onclick="window.open('https://YOURMERCHSTORE.com', '_blank')" class="btn">🛒 Shop Merch</button>
   </section>
 
   <footer>
+    <p>&copy; 2025 Flatspinx Streaming | Powered by passion 🎧</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
+</body>
+</html>
+
     <p>&copy; 2025 Flatspinx Streaming</p>
   </footer>
 
