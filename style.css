@@ -182,7 +182,7 @@ body.light-mode button:hover {
 
 /* RPG fantasy mode */
 body.rpg-mode {
-  background-image: url('assets/fantasy-background.jpg'); /* upload your RPG-cat style background */
+  background-image: url('assets.fantasy-background.png'); /* your uploaded file */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
