@@ -6,14 +6,14 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  background-image: url('../images/background.png');
+  background-image: url('fantasy-background.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   transition: background 0.5s ease;
 }
+
 
 /* Glowing border container */
 .container {
