@@ -2,35 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flatspinx Streaming</title>
+  <title>Flatspinx Gaming</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🎮 Flatspinx Live</h1>
-    <nav>
-      <a href="#stream">Stream</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#community">Community</a>
-      <a href="#support">Support</a>
-    </nav>
-    <button id="theme-toggle">🌗 Toggle Theme</button>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="brand-logo">
+          <!-- Drop your wizard cat logo here -->
+        </div>
+        <div>
+          <div class="brand-title">FLATSPINX GAMING</div>
+          <div class="brand-subtitle">Cats, quests, and cozy chaos.</div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <a href="#stream">Stream</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#community">Community</a>
+        <a href="#support">Support</a>
+      </nav>
+      <button class="btn btn-purple" id="theme-toggle">🌗 Toggle Theme</button>
+    </div>
   </header>
 
-  <section id="stream">
+  <!-- Stream -->
+  <section id="stream" class="container">
     <h2>Live Stream + Chat</h2>
-    <div class="stream-container">
-      <iframe src="https://player.twitch.tv/?channel=flatspinx&parent=flatspinx.github.io&parent=flatspinx-gif.github.io"
-        frameborder="0" allowfullscreen="true" scrolling="no" class="stream-player">
-      </iframe>
-      <iframe src="https://www.twitch.tv/embed/flatspinx/chat?parent=flatspinx.github.io&parent=flatspinx-gif.github.io"
-        frameborder="0" scrolling="no" class="stream-chat">
-      </iframe>
+    <div class="embed glow">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Live on Twitch</div>
+          <span class="badge">Wizard Cat Online</span>
+        </div>
+        <iframe src="https://player.twitch.tv/?channel=flatspinx&parent=flatspinx.github.io"
+          allowfullscreen class="stream-player"></iframe>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Chat</div>
+          <span class="badge">Be kind, roll 20s</span>
+        </div>
+        <iframe src="https://www.twitch.tv/embed/flatspinx/chat?parent=flatspinx.github.io"
+          class="stream-chat"></iframe>
+      </div>
     </div>
   </section>
 
-  <section id="schedule">
+  <!-- Schedule -->
+  <section id="schedule" class="container">
     <h2>Streaming Schedule</h2>
     <div class="card">
       <ul>
@@ -41,25 +64,31 @@
     </div>
   </section>
 
-  <section id="community">
+  <!-- Community -->
+  <section id="community" class="container">
     <h2>Join the Community</h2>
     <p>
-      <a href="https://discord.gg/https://discord.gg/bSUfnBvrfY" class="btn">Discord</a>
-      <a href="https://twitter.com/YOURHANDLE" class="btn">Twitter</a>
-      <a href="https://instagram.com/YOURHANDLE" class="btn">Instagram</a>
+      <a href="https://discord.gg/bSUfnBvrfY" class="btn btn-purple">Discord</a>
+      <a href="https://twitter.com/YOURHANDLE" class="btn btn-primary">Twitter</a>
+      <a href="https://instagram.com/YOURHANDLE" class="btn btn-primary">Instagram</a>
     </p>
   </section>
 
-  <section id="support">
+  <!-- Support -->
+  <section id="support" class="container">
     <h2>Support the Stream</h2>
-    <button onclick="window.open('https://paypal.me/YOURPAYPAL', '_blank')" class="btn">💸 Donate</button>
-    <button onclick="window.open('https://YOURMERCHSTORE.com', '_blank')" class="btn">🛒 Shop Merch</button>
+    <button onclick="window.open('https://paypal.me/YOURPAYPAL', '_blank')" class="btn btn-primary">💸 Donate</button>
+    <button onclick="window.open('https://YOURMERCHSTORE.com', '_blank')" class="btn btn-purple">🛒 Shop Merch</button>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Flatspinx Streaming | Powered by passion 🎧</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Flatspinx Gaming | Powered by passion 🎧</p>
+    </div>
   </footer>
 
+  <!-- Theme toggle -->
   <script>
     const toggle = document.getElementById('theme-toggle');
     toggle.addEventListener('click', () => {
