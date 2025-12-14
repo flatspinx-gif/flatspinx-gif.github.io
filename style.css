@@ -20,8 +20,8 @@
 
 /* Base */
 body {
-  background: url('https://raw.githubusercontent.com/flatspinx-gif/flatspinx-gif.github.io/main/assets/fantasy%20map%20background.png') center/cover no-repeat fixed;
-  background-color: #0f0f14; /* fallback color */
+  background: url('assets/fantasy%20map%20background.png') center/cover no-repeat fixed;
+  background-color: #0f0f14; /* fallback */
   color: #e9ecf1;
 }
 
