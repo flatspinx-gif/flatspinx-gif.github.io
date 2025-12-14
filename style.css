@@ -1,4 +1,4 @@
-/* FLATSPINX GAMING — RPG Cat Wizard Theme */
+/* FLATSPINX GAMING — Fantasy Map Theme */
 
 :root {
   --fg-gold: #f6c453;
@@ -18,14 +18,28 @@
   --font-body: "Inter", sans-serif;
 }
 
-/* Base */
+/* Background */
 body {
+  margin: 0;
+  font-family: var(--font-body);
   background: url('assets/fantasy%20map%20background.png') center/cover no-repeat fixed;
-  background-color: #0f0f14; /* fallback */
+  background-color: var(--bg-0);
   color: #e9ecf1;
+  line-height: 1.6;
+  position: relative;
 }
 
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 20, 0.6);
+  pointer-events: none;
+  z-index: -1;
+}
 
+/* Container */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -98,6 +112,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   margin: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-primary {
@@ -112,6 +127,10 @@ body {
   box-shadow: var(--glow-purple);
 }
 
+.btn:hover {
+  transform: scale(1.05);
+}
+
 /* Panels & Cards */
 .card, .panel {
   background: var(--bg-2);
@@ -119,6 +138,7 @@ body {
   padding: 16px;
   box-shadow: var(--shadow-soft);
   margin: 12px 0;
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .panel-header {
@@ -147,6 +167,7 @@ body {
   border: none;
 }
 
+/* Embed layout */
 .embed {
   display: grid;
   gap: 16px;
@@ -156,3 +177,7 @@ body {
 .site-footer {
   margin-top: 40px;
   padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
