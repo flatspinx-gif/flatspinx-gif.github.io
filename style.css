@@ -181,3 +181,31 @@ body::before {
   font-size: 14px;
   color: #aaa;
 }
+
+/* Fantasy Icon Panel */
+.icon-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 28px 16px;
+  background: var(--bg-2);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  margin-top: 32px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.icon-panel img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 4px #000);
+  border-radius: var(--radius-md);
+}
+
+.icon-panel img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px var(--fg-gold));
+}
